@@ -1,4 +1,4 @@
-# spring-cloud-without-docker
+# Spring-Cloud - without docker
 
 ### Config Server
 It's responsable to produce the configurations for the services, the configurations are store in a git repository.
