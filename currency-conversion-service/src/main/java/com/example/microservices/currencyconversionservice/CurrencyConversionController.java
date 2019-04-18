@@ -20,6 +20,6 @@ public class CurrencyConversionController {
                                                   @PathVariable String to,
                                                   @PathVariable BigDecimal quantity) {
         CurrencyConversionBean respo = proxy.retriveExchangeValue(from, to);
-        return new CurrencyConversionBean(respo.getId(), from, to, respo.getConversionMultiple(), respo.getQuantity(), quantity.multiply(respo.getConversionMultiple()), 0);
+        return new CurrencyConversionBean(respo.getId(), from, to, respo.getConversionMultiple(), respo.getQuantity(), quantity.multiply(respo.getConversionMultiple()), respo.getPort());
     }
 }
