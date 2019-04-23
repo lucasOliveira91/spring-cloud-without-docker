@@ -17,4 +17,5 @@ It's responsible to intercept all request, in this point the authentication and 
 it makes an ID for each  requests
 
 ### Zipkin
-This is responsible to get all trance from the services
+This is responsible to get all trance from the services.
+This solution needs a zipkin server and a MQ server like RabbitMQ
