@@ -15,4 +15,10 @@ public class LimitsConfigurationController {
     public LimitConfiguration retriveLimitsFromConfigurations() {
         return new LimitConfiguration(configuration.getMaximum(),configuration.getMinimum());
     }
+
+    @GetMapping("/fault-tolerance-example")
+//    @HystrixCommand
+    public LimitConfiguration retriveCOnfiguration () {
+        throw new RuntimeException("Service not available");
+    }
 }
