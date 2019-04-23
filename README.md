@@ -19,3 +19,7 @@ it makes an ID for each  requests
 ### Zipkin
 This is responsible to get all trance from the services.
 This solution needs a zipkin server and a MQ server like RabbitMQ
+
+### Spring-Bus
+
+### Hystrix - Fault Tolerance
